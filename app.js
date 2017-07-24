@@ -1,0 +1,1 @@
+//$("img").attr("class", "row_of_three");
