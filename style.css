@@ -5,7 +5,7 @@ BODY: HEADER
 h1 {
     font-family: serif;
     font-size: 2em;
-    margin-left: 2.5%;
+    margin-left: 4.5%;
     margin-bottom: 0;
 }
 
@@ -13,7 +13,8 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: .8em;
-    margin-left: 2.5%;
+    margin-left: 4.5%;
+    margin-bottom: 4%;
     margin-top: 0;
 }
 
@@ -42,12 +43,59 @@ ul {
 .first_row_of_three,
 .second_row_of_three {
     display: inline-block;
-    width: 20%;
-    margin: 2.5%;
+    width: 25%;
+    margin: 2.5% 4.15%;
     float: left;
     border-radius: 2.5%;
 }
 
+#img_five,
+#img_ten {
+    width: 92%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5%;
+    max-height: 100%;
+}
+
+
+.row_of_two {
+    float: left;
+    display: inline-block;
+/*    margin: 0 auto;*/
+    
+}
+
+/*leg splint and box*/
+#img_seven {
+    width: 46%;
+    border-radius: 5px;
+}
+
+/*shell base*/
+#img_nine {
+    width: 23%;
+    margin-left: 16%;
+    margin-top: 12%;
+    border-radius: 5px;
+    
+}
+
+.row_of_two_container {
+    margin-left: 4%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+/*manufacture label*/
+#img_eleven {
+    width: 35%;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 10%;
+    top: -25px;
+    left: -50px
+}
 
 /***************************
 BODY: TEXT
@@ -67,4 +115,37 @@ BODY: TEXT
 
 .img_nine_text {
     margin-bottom: 14%;
+}
+
+
+/***************************
+BODY: FOOTER
+***************************/
+
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+footer p {
+    margin-top: 60px;
+}
+
+/***************************
+JAVA QUERY
+***************************/
+
+#overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    display: none;
+    text-align: center;
 }
