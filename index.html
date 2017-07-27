@@ -7,43 +7,56 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:500,700" rel="stylesheet">
     </head>
     <body>
+        
         <div class="header">
             <h1>No, <span class="title_text_you">You </span>Sit Down: Chair Designs of Charles and Ray Eames</h1>
             <h2>An interactive digital exhibition, by Michael Farmer</h2>
             <ul id="all_images">
+                <ul>
                 <li>
-                    <a href="pics/img_five.jpg">
+                    <a href="pics/img_five.jpg" id="img_five_link">
                     <img src="pics/img_five.jpg" alt="DCW" id="img_five">
-                    <p class="description">Dining Chair Metal (DCM), in production 1946 - present</p>
-                    </a> 
+<!--                    <p class="description">Dining Chair Metal (DCM), in production 1946 - present</p>-->
+                    </a>
+                    
                 </li>
-
-                <li>
+                </ul>
+                
+                <ul id="imageGallery">
+                <li class="disappearing_image_group">
                        <a href="pics/img_four.jpg">
                     <img src="pics/img_four.jpg" alt="DCW" id="img_four" class="first_row_of_three">
                     <p class="description">Dining Chair Metal (DCM), in production 1946 - present</p>
                        </a> 
                 </li>
-                <li>
-                        <a href="pics/img_six.jpg">
-                    <img src="pics/img_six.jpg" alt="label" id="img_six" class="first_row_of_three">
-                        <p class="description">Herman Miller foil manufacturing label, rubber mounts and tubular steel legs.</p>
-                        </a>
-                </li>
-                <li>
-                        <a href="pics/img_eight.jpg">
-                    <img src="pics/img_eight.jpg" alt="LCW underside" id="img_eight" class="first_row_of_three">
-                    <p class="description">Lounge Chair Wood (LCW), in production 1946 - 1953 and 1994 - present; showing original hardware and molded plywood frame</p>
-                        </a>
-                </li>
+                
+                
+                    <li class="disappearing_image_group disappearing_image">
+                            <a href="pics/img_six.jpg">
+                        <img src="pics/img_six.jpg" alt="label" id="img_six" class="first_row_of_three">
+                            <p class="description">Herman Miller foil manufacturing label, rubber mounts and tubular steel legs.</p>
+                            </a>
+<!--                        <div class="disappearing_image_group_overlay_one"></div>-->
+                    </li>
+                
+                
+                    <li class="disappearing_image_group disappearing_image">
+                            <a href="pics/img_eight.jpg">
+                        <img src="pics/img_eight.jpg" alt="LCW underside" id="img_eight" class="first_row_of_three">
+                        <p class="description img_eight_text">Lounge Chair Wood (LCW), in production 1946 - 1953 and 1994 - present; showing original hardware and molded plywood frame</p>
+                            </a>
+<!--                        <div class="disappearing_image_group_overlay_two"></div>-->
+                    </li>
+                
          
-                   
+                  
                 <li>
-                        <a href="pics/img_one.jpg">
+                    <a href="pics/img_one.jpg">
                     <img src="pics/img_one.jpg" alt="side chair group shot" id="img_one" class="second_row_of_three">
                     <p class="description">Dining Shell Wire Rod Base (DSR), in production 1951 - 1993 and 2014 - present</p>
-                        </a>
+                    </a>
                 </li>
+               
                 <li>
                         <a href="pics/img_two.jpg">
                     <img src="pics/img_two.jpg" alt="side chair single" id="img_two" class="second_row_of_three">
@@ -53,43 +66,53 @@
                 <li>
                     <a href="pics/img_three.jpg">
                     <img src="pics/img_three.jpg" alt="eiffel tower base" id="img_three" class="second_row_of_three">
-                    <p class="description">This base is nicknamed "Effiel Tower"  </p>
+                    <p class="description img_three_text">This base is nicknamed "Effiel Tower"  </p>
                     </a>
                 </li>
+                    </ul>
                 
-                <li>
-                    <a href="pics/img_nine.jpg">
-                    <img src="pics/img_ten.jpg" alt="leg splint label" id="img_ten">
-                    <p class="description img_ten_text">Leg Splint, in production 1943 -- specifically developed for the US World War II effort. </p>
-                    </a>
-                </li>
-                
+               <ul>
                 <div class="row_of_two_container">
                     <li>
                         <a href="pics/img_seven.jpg">
                         <img src="pics/img_seven.jpg" alt="splint and box with stamp" id="img_seven" class="row_of_two">
-                        <p class="description">Leg Splint, in production 1943 -- specifically developed for the US World War II effort.  </p>
+<!--                        <p class="description">Leg Splint, in production 1943 -- specifically developed for the US World War II effort.  </p>-->
                         </a>
                     </li>
 
                     <li>
                         <a href="pics/img_nine.jpg">
                         <img src="pics/img_nine.jpg" alt="shell base" id="img_nine" class="row_of_two">
-                        <p class="description img_nine_text">Dining Fiberglass Armchair X-Base (DFAX), in production 1950 - 1993 and 2014 - present</p>
+<!--                        <p class="description img_nine_text">Dining Fiberglass Armchair X-Base (DFAX), in production 1950 - 1993 and 2014 - present</p>-->
                         </a>
                     </li>
                 </div>
                 <li>
                     <a href="pics/img_nine.jpg">
                     <img src="pics/img_eleven.jpg" alt="manufacture tag 2" id="img_eleven">
-                    <p class="description img_eleven_text">Show me ya moves!</p>
+<!--                    <p class="description img_eleven_text">Show me ya moves!</p>-->
+                    </a>
+                </li>
+                
+                 <li>
+                    <a href="pics/eames_one.jpg">
+                    <img src="pics/eames_one.jpg" alt="Charles and Ray Eames" id="eames_one">
+                    </a>
+                </li>
+                    <li>
+                    <a href="pics/eames_elephant.jpg">
+                    <img src="pics/eames_elephant.jpg" alt="Elephant designed by Charles Eames" id="eames_elephant">
+                    </a>
+                </li>
+                    
+                 <li>
+                    <a href="pics/eames_text.jpg">
+                    <img src="pics/eames_text.jpg" alt="custom eames text" id="eames_text">
                     </a>
                 </li>
                 
                 
-                
         </ul>
-        </div>
         <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
