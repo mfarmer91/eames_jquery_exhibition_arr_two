@@ -24,19 +24,12 @@ $("#img_five_link").click(function() {
 $eames_one.click(function() {
     event.preventDefault();
     $eames_one.hide();
-    $eames_elephant.hide();
     $overlay_two.hide();
 })
 
-//$eames_elephant.click(function() {
-//    event.preventDefault();
-//    $eames_one.hide();
-//    $eames_elephant.hide();
-//    $overlay_two.hide();
-//})
-
-
-
+$("#eames_text").click(function() {
+    event.preventDefault();
+})
 
 
 $("#imageGallery img").click(function() {
@@ -53,12 +46,23 @@ $("p").click(function() {
     
 });
 
+$(".row_of_two_container a").click(function() {
+    //1, disable usual behavior of image.
+    event.preventDefault();
+    $("#eames_text_two").show();
+    $("#eames_text_three").show();
+}); 
+
+$("#eames_text_three").click(function() {
+    event.preventDefault();
+    $(this).remove();
+    
+});
+
+$("#eames_text_two").click(function() {
+    event.preventDefault();
+    $(this).remove();
+    
+});
 
 
-//$("img").click(function() {
-//    //2.2, show text
-//    $(this).next().show();
-//    //2.2, remove img
-//    $(this).remove();   
-//});
-//    

@@ -73,10 +73,12 @@ ul {
 }
 
 /*shell base*/
-#img_nine {
+#img_eleven {
     width: 23%;
     margin-left: 16%;
     margin-top: 12%;
+    padding-bottom: 50px;
+    padding-top: 40px;
     border-radius: 5px;
     
 }
@@ -88,14 +90,37 @@ ul {
 }
 
 /*manufacture label*/
+/*
 #img_eleven {
     width: 35%;
     border-radius: 5px;
     position: relative;
     margin-bottom: 10%;
-    top: -25px;
-    left: -50px
+    top: -100px;
+    left: 250px
 }
+*/
+
+#eames_one {
+    border-radius: 50%;
+    width: 35%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    display: none;
+}
+
+/*
+#eames_elephant {
+    width: 20%;
+    display: block;
+    margin: 0;
+    border-radius: 5%;
+    max-height: 100%;
+    float:left;
+
+}
+*/
 
 
 
@@ -114,6 +139,7 @@ BODY: TEXT
     float: left;
     display: none;
     text-align: center;
+    font-size: .5em;
 }
 
 .img_three_text {
@@ -124,25 +150,7 @@ BODY: TEXT
     margin-bottom: 20%;
 }
 
-#eames_one {
-    border-radius: 50%;
-    width: 35%;
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    display: none;
-}
 
-/*
-#eames_elephant {
-    border-radius: 50%;
-    width: 15%;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    display: none;
-}
-*/
 
 #eames_text {
     border-radius: 50%;
@@ -150,6 +158,26 @@ BODY: TEXT
     position: absolute;
     top: 42%;
     left: 56%;
+
+}
+
+#eames_text_two {
+    border-radius: 50%;
+    width: 25%;
+    position: relative;
+    right: 20%;
+    bottom: -20px;
+    display: none;
+
+}
+
+#eames_text_three {
+    border-radius: 50%;
+    width: 40%;
+    position: relative;
+    right: -7%;
+    top: 80px;
+    display: none;
 
 }
 
@@ -176,6 +204,7 @@ footer p {
 JAVA QUERY
 ***************************/
 
+/*
 #overlay {
     background: rgba(0, 0, 0, 0.7);
     width: 100px;
@@ -201,6 +230,7 @@ JAVA QUERY
     display: none;
     text-align: center;
 }
+*/
 
 /*
 .disappearing_image_group_overlay_one {
@@ -214,6 +244,18 @@ JAVA QUERY
     text-align: center;
 }
 */
+
+@media (min-width: 480px) {
+  .description {
+     font-size: 1em;
+  }
+    
+    #img_eleven {
+        padding-top: 0;
+    }
+}
+    
+    
 
 
 
