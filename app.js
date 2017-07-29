@@ -4,60 +4,53 @@ var $imgFiveLink = $("#img_five_link");
 var $eamesText = $("#eames_text");
 var $eamesTextTwo = $("#eames_text_two");
 var $eamesTextThree = $("#eames_text_three");
+var $description = $(".description");
 
 
-
-$imgFiveLink.click(function() {
+function showEamesOne(){
     event.preventDefault();
     $eames_one.show();
-});
+}
 
-$eames_one.click(function() {
+function hideEamesOne() {
     event.preventDefault();
     $eames_one.hide();
-})
+}
 
-$eamesText.click(function() {
-    event.preventDefault();
-})
-
-
-
-$("#imageGallery img").click(function() {
+function showDescription() {
     event.preventDefault();
     $(this).hide();
     $(this).next().show();
-});
+}
 
-$("p").click(function() {
+function hideDescription() {
     event.preventDefault();
     $(this).hide();
     $(this).prev().show();
-    
-});
+}
 
-
-//Two text bubbles show or remove for final row of 2.
-
-$(".row_of_two_container a").click(function() {
-    //1, disable usual behavior of image.
-    event.preventDefault();
+function showText(){
+    event.preventDefault()
     $eamesTextTwo.show();
     $eamesTextThree.show();
-}); 
+}
 
-$eamesTextTwo.click(function() {
-    event.preventDefault();
-    $eamesTextTwo.remove();
-    
-});
+function hideText(){
+    $(this).hide();
+}
 
-$eamesTextThree.click(function() {
-    event.preventDefault();
-    $eamesTextThree.remove();
-    
-});
+$imgFiveLink.click(showEamesOne);
+$eames_one.click(hideEamesOne);
+
+$("#imageGallery img").click(showDescription);
+$description.click(hideDescription);
+
+$(".row_of_two_container a").click(showText);
+
+$eamesTextTwo.click(hideText);
+$eamesTextThree.click(hideText);
 
 
+///////////////////
 
 
